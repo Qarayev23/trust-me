@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/styles/css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="./static/styles/css/select2/select2.min.css">
+    <link rel="stylesheet" href="./static/styles/css/main.min.css">
+
+    <title>Trustme</title>
+</head>
+
+<body>                                                                               <!-- Apply Modal -->
+    <header>
+        <nav class="navbar">
+            <div class="g-container">
+                <div class="navbar__desktop-wrapper">
+                    <a href="./home.html" class="navbar__logo">
+                        <img src="./static/assets/svg/trustme_svg 1.svg" alt="">
+                    </a>
+
+                    <ul class="navbar__list">
+                        <li class="navbar__item">
+                            <a href="./about-us.html" class="navbar__link">Haqqımızda</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="./services.html" class="navbar__link">Xidmətlər</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="./portfolio.html" class="navbar__link">Portfolio</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="./blogs.html" class="navbar__link">Bloq</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="./contact.html" class="navbar__link">Əlaqə</a>
+                        </li>
+                    </ul>
+
+                    <div class="navbar__helper">
+                        <a href="./digital-audit.html" class="g-btn-fill">Rəqəmsal audit</a>
+
+                        <div class="dropdown lang-dropdown">
+                            <button class="dropdown-toggle" type="button" id="selectLanguage" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img src="./static/assets/svg/global.svg" alt="">
+                                <span>
+                                    AZE
+                                    <svg width="8" height="6" viewBox="0 0 8 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1.5L4 4.5L7 1.5" stroke="" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="selectLanguage">
+                                <a class="dropdown-item" href="">Ru</a>
+                                <a class="dropdown-item" href="">En</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="navbar__mobile-wrapper">
+                    <button class="navbar__open">
+                        <img src="./static/assets/svg/menu-icon.svg" alt="">
+                    </button>
+                    <a href="./home.html" class="navbar__mobile-logo">
+                        <img src="./static/assets/svg/trustme_svg 1.svg" alt="">
+                    </a>
+                    <a href="tel:+994702523315" class="navbar__mobile-call">
+                        <i class="fa-solid fa-phone-flip"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="mob-navbar">
+            <div class="g-container h-100">
+                <div class="mob-navbar__wrapper">
+                    <button class="mob-navbar__close">
+                        <img src="./static/assets/svg/Clear.svg" alt="">
+                    </button>
+                    <a href= "" class="mob-navbar__logo">
+                        <img src="./static/assets/svg/trustme_svg 1.svg" alt="">
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="./about-us.html">
+                                Haqqımızda
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./services.html">
+                                Xidmətlər
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./portfolio.html">
+                                Portfolio
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./blogs.html">
+                                Bloq
+                            </a>
+                        </li>
+                        <span class="line"></span>
+                        <li>
+                            <a href="./careers.html">
+                                Karyera
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./contact.html">  
+          Əlaqə                              </a>
+                        </li>
+
+                        <li>
+                            <a href="./faq.html">
+                                FAQ
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="dropdown mob-lang-dropdown">
+                        <button class="dropdown-toggle" type="button" id="selectLanguage" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <span>
+                                Azərbaycan dili
+                                <svg width="8" height="6" viewBox="0 0 8 6" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1.5L4 4.5L7 1.5" stroke="" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="selectLanguage">
+                            <a class="dropdown-item" href="">Rus dili</a>
+                            <a class="dropdown-item" href="">İngilis dili</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="./static/assets/svg/mob-decor.svg" class="mob-navbar__decor" alt="">
+        </nav>
+    </header>
+
+    <main>
+        <div class="section blog-detail pt-4 pt-sm-5 mb-sm-5 mb-4">
+            <div class="g-container">
+                <ul class="g-breadcrumb mb-3 mb-sm-4">
+                    <li class="g-breadcrumb__item">
+                        Ana səhifə
+                    </li>
+                    <li class="g-breadcrumb__item g-breadcrumb__item--active">
+                        <a href="">
+                            Rəqəmsal Audit
+                        </a>
+                    </li>
+                </ul>
+                <div class="row g-3 gx-lg-5">
+                    <div class="col-lg-8">
+                        <div class="section-title mb-3">
+                            <h2>Rəqəmsal Audit</h2>
+                        </div>
+                        <div class="g-text">
+                            <b>Veb saytınızı qeyd edin, SEO Audit nəticənizi göndərək.</b>
+                            <br>
+                            SEO audit xidməti, veb saytınızın analizi deməkdir. Yəni veb saytınızda hansı boşluqlar
+                            mövcuddur, axtarış nəticələrində çıxmağınız üçün atacağınız addımlar hansılardır və axtarış
+                            motorlarının alqoritmalarına uyğun olaraq hansı dəyişiklikləri icra etməlisinizsə, onları
+                            sizə bildirir.
+                        </div>
+                        <div class="accordion" id="accordionCategory">
+                            <div class="accordion-item">
+                                <div class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Facebook marketinq
+                                        <img src="./static/assets/svg/acc-icon.svg" alt="">
+                                    </button>
+                                </div>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" >
+                                    <div class="accordion-body">
+                                        Loqo, şirkətin imici və şəxsiyyətinin ayrılmaz hissəsidir. Mükəmməl dizaynlı bir
+                                        loqo dəyərlərinizi, hədəflərinizi, şəxsiyyətinizi və fərqinizi ifadə edir. Biz,
+                                        hədəflərinizi, fikirlərinizi və şəxsiyyətinizi göstərən xüsusi dizayn təqdim
+                                        edirik. Potensial
+                                        müştərilərinizin diqqətini cəlb etmək və bazarda sizə lazımi dərəcədə görünürlük
+                                        vermək üçün təsirli bir loqo dizaynı hazırlayırıq.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        İnstagram marketinq
+                                        <img src="./static/assets/svg/acc-icon.svg" alt="">
+                                    </button>
+                                </div>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    >
+                                    <div class="accordion-body">
+                                        Loqo, şirkətin imici və şəxsiyyətinin ayrılmaz hissəsidir. Mükəmməl dizaynlı bir
+                                        loqo dəyərlərinizi, hədəflərinizi, şəxsiyyətinizi və fərqinizi ifadə edir. Biz,
+                                        hədəflərinizi, fikirlərinizi və şəxsiyyətinizi göstərən xüsusi dizayn təqdim
+                                        edirik. Potensial
+                                        müştərilərinizin diqqətini cəlb etmək və bazarda sizə lazımi dərəcədə görünürlük
+                                        vermək üçün təsirli bir loqo dizaynı hazırlayırıq.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Linkedin marketinq
+                                        <img src="./static/assets/svg/acc-icon.svg" alt="">
+                                    </button>
+                                </div>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" >
+                                    <div class="accordion-body">
+                                        Loqo, şirkətin imici və şəxsiyyətinin ayrılmaz hissəsidir. Mükəmməl dizaynlı bir
+                                        loqo dəyərlərinizi, hədəflərinizi, şəxsiyyətinizi və fərqinizi ifadə edir. Biz,
+                                        hədəflərinizi, fikirlərinizi və şəxsiyyətinizi göstərən xüsusi dizayn təqdim
+                                        edirik. Potensial
+                                        müştərilərinizin diqqətini cəlb etmək və bazarda sizə lazımi dərəcədə görünürlük
+                                        vermək üçün təsirli bir loqo dizaynı hazırlayırıq.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="apply-box">
+                            <p class="blog-detail__subtitle mb-4 pb-1">
+                                Müraciət et
+                            </p>
+                            <form action="">
+                                <div class="g-input-group">
+                                    <label for="name">Ad və soyad <span>*</span></label>
+                                    <input id="name" type="text" placeholder="Ad və soyadınızı daxil edin">
+                                </div>
+                                <div class="g-input-group">
+                                    <label for="phone">Əlaqə nömrəsi <span>*</span></label>
+                                    <div class="d-flex align-items-center">
+                                        <select class="prefix" name="states[]" style="min-width: 85px;">
+                                            <option value='+994'>+994</option>
+                                            <option value='+7'>+7</option>
+                                            <option value='+1'>+1</option>
+                                        </select>
+                                        <input class="w-100 ms-3" id="phone" type="text" placeholder="(_ _ _)_ _ _ _ _ _">
+                                    </div>
+                                </div>
+                                <div class="g-input-group">
+                                    <label for="email">Email <span>*</span></label>
+                                    <input id="email" type="email" placeholder="Email ünvanınızı daxil edin">
+                                </div>
+                                <div class="g-input-group">
+                                    <label for="website">Vebsayt</label>
+                                    <input id="website" type="url" placeholder="Vebsayt URL daxil edin">
+                                </div>
+                                <div class="g-input-group">
+                                    <label for="Facebook">Facebook</label>
+                                    <input id="Facebook" type="url" placeholder="Facebook URL daxil edin">
+                                </div>
+                                <div class="g-input-group">
+                                    <label for="Instagram">Instagram</label>
+                                    <input id="Instagram" type="url" placeholder="Instagram URL daxil edin">
+                                </div>
+
+                                <button type="submit" class="g-btn-fill w-100">Göndər</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="g-container">
+            <div class="footer__wrapper">
+                <div class="footer__info">
+                    <a href="./home.html" class="footer__logo">
+                        <img src="./static/assets/svg/logo.svg" alt="">
+                    </a>
+                    <p class="footer__info-text">
+                        Trustme Digital is a full-service marketing agency that focuses on driving results via effective
+                        and measurable solutions.
+                    </p>
+                </div>
+                <div class="footer__links">
+                    <ul class="footer__list">
+                        <p class="footer__title">
+                            Əsas keçidlər
+                        </p>
+                        <li class="footer__item">
+                            <a href="./about-us.html" class="footer__link">
+                                Haqqımızda
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="./services.html" class="footer__link">
+                                Xidmətlər
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="./portfolio.html" class="footer__link">
+                                Portflio
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="./blogs.html" class="footer__link">
+                                Bloq
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="./careers.html" class="footer__link">
+                                Kariyera
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">
+                                Əlaqə
+                            </a>
+                        </li>
+
+                                            <li class="footer__item">
+                            <a href="./faq.html" class="footer__link">
+                                Tez-tez soruşulan suallar
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="./brief.html" class="footer__link">
+                               Brief göndər
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="footer__list">
+                        <p class="footer__title">
+                            Xidmətlərimiz
+                        </p>
+                        <li class="footer__item">
+                            <a href="./digital-strategy-service.html" class="footer__link">
+                                Rəqəmsal strategiya
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="./smm-service.html" class="footer__link">
+                                SMM xidməti
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">
+                                Media planlama
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="./seo-service.html" class="footer__link">
+                                SEO xidməti
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">
+                                Google reklamları
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">
+                                Vebsayt xidməti
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">
+                                Brendinq xidməti
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="./design-service.html" class="footer__link">
+                                Dizayn xidmətləri
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">
+                                Lokal marketinq
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__contact">
+                    <p class="footer__title">
+                        Əlaqə
+                    </p>
+                    <ul class="footer__contact-list">
+                        <li class="footer__contact-item">
+                            <a href="" class="footer__contact-link">
+                                <img src="./static/assets/svg/Icons (1).svg" alt=""> Bakı, Babək prospekti, 10E
+                            </a>
+                        </li>
+                        <li class="footer__contact-item">
+                            <a href="tel:+994702523315" class="footer__contact-link">
+                                <img src="./static/assets/svg/Icons (2).svg" alt=""> +994 70 252 33 15
+                            </a>
+                        </li>
+                        <li class="footer__contact-item">
+                            <a href="tel:+994775053315" class="footer__contact-link">
+                                <img src="./static/assets/svg/Icons (2).svg" alt=""> +994 77 505 33 15
+                            </a>
+                        </li>
+                        <li class="footer__contact-item">
+                            <a href="mailto:hello@trustmedigital.com" class="footer__contact-link">
+                                <img src="./static/assets/svg/Icons (3).svg" alt=""> hello@trustmedigital.com
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="footer__socials-list">
+                        <li class="footer__socials-item">
+                            <a href="" class="footer__socaials-link">
+                                <img src="./static/assets/svg/Icons (4).svg" alt="">
+                            </a>
+                        </li>
+                        <li class="footer__socials-item">
+                            <a href="" class="footer__socaials-link">
+                                <img src="./static/assets/svg/Icons.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="footer__socials-item">
+                            <a href="" class="footer__socaials-link">
+                                <img src="./static/assets/svg/fb.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="footer__socials-item">
+                            <a href="" class="footer__socaials-link">
+                                <img src="./static/assets/svg/twitter.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="footer__socials-item">
+                            <a href="" class="footer__socaials-link">
+                                <img src="./static/assets/svg/Group.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="footer__socials-item">
+                            <a href="" class="footer__socaials-link">
+                                <img src="./static/assets/svg/Group (1).svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <p><span>Trustme Digital</span> | Bütün hüquqlar qorunur. 2022</p>
+            </div>
+        </div>
+    </footer>
+
+    <footer class="mob-footer">
+        <div class="g-container">
+            <div class="mob-footer___wrapper">
+                <a href="" class="mob-footer__logo">
+                    <img src="./static/assets/svg/logo.svg" alt="">
+                </a>
+                <div class="accordion mob-footer__accordion" id="footerAccordion">
+                    <div class="accordion-item">
+                        <div class="accordion-header" id="footer-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#footer-collapseOne" aria-expanded="true"
+                                aria-controls="footer-collapseOne">
+                                Xidmətlərimiz
+                                <div class="plusminus"></div>
+                            </button>
+                        </div>
+                        <div id="footer-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="footer-headingOne" >
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            360 Marketinq
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./digital-strategy-service.html">
+                                            Rəqəmsal strategiya
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./seo-service.html">
+                                            SEO xidməti
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Vebsayt xidməti
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Lokal Marketinq
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Google reklamları
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Tv& media planlama
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            SEO audit
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Brendinq xidməti
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./design-service.html">
+                                            Dizayn xidməti
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Reklam filmlərin çəkilişi
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header" id="footer-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#footer-collapseTwo" aria-expanded="false"
+                                aria-controls="footer-collapseTwo">
+                                Portfolio
+                                <div class="plusminus"></div>
+                            </button>
+                        </div>
+                        <div id="footer-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="footer-headingTwo" >
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            Vebsayt
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            SMM
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            SEO
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Branding
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header" id="footer-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#footer-collapseThree" aria-expanded="false"
+                                aria-controls="footer-collapseThree">
+                                Əlaqə
+                                <div class="plusminus"></div>
+                            </button>
+                        </div>
+                        <div id="footer-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="footer-headingThree" >
+                            <div class="accordion-body">
+                                <ul class="footer__contact-list mb-0">
+                                    <li class="footer__contact-item">
+                                        <a href="" class="footer__contact-link">
+                                            <img src="./static/assets/svg/Icons (1).svg" alt=""> Bakı, Babək prospekti,
+                                            10E
+                                        </a>
+                                    </li>
+                                    <li class="footer__contact-item">
+                                        <a href="tel:+994702523315" class="footer__contact-link">
+                                            <img src="./static/assets/svg/Icons (2).svg" alt=""> +994 70 252 33 15
+                                        </a>
+                                    </li>
+                                    <li class="footer__contact-item">
+                                        <a href="tel:+994775053315" class="footer__contact-link">
+                                            <img src="./static/assets/svg/Icons (2).svg" alt=""> +994 77 505 33 15
+                                        </a>
+                                    </li>
+                                    <li class="footer__contact-item">
+                                        <a href="mailto:hello@trustmedigital.com" class="footer__contact-link">
+                                            <img src="./static/assets/svg/Icons (3).svg" alt="">
+                                            hello@trustmedigital.com
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header" id="footer-headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#footer-collapseFour" aria-expanded="false"
+                                aria-controls="footer-collapseFour">
+                                Əsas keçidlər
+                                <div class="plusminus"></div>
+                            </button>
+                        </div>
+                        <div id="footer-collapseFour" class="accordion-collapse collapse"
+                            aria-labelledby="footer-headingFour" >
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>
+                                        <a href="./about-us.html">
+                                            Haqqımızda
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./services.html">
+                                            Xidmətlər
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./portfolio.html">
+                                            Portfolio
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./blogs.html">
+                                            Bloq
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Əlaqə
+                                        </a>
+                                    </li>
+                              
+                                    <li>
+                                        <a href="./faq.html">
+                                            Tez-tez soruşulan suallar
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./brief.html">
+                                            Brief Göndər
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="mob-footer__socials">
+                    <li>
+                        <a href="">
+                            <img src="./static/assets/svg/instagran-icon.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./static/assets/svg/fb-icon.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./static/assets/svg/Vector (3).svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./static/assets/svg/Vector (4).svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./static/assets/svg/Vector (5).svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./static/assets/svg/Vector (6).svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+                <div class="mob-footer__copyright">
+                    <p><span>Trustme Digital</span> | Bütün hüquqlar qorunur. 2022</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./static/js/min/jquery.min.js"></script>
+    <script src="./static/js/min/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./static/js/min/select2.min.js"></script>
+    <script src="./static/js/main.js"></script>
+
+    <script src="./static/js/apply-form.js"></script>
+</body>
+
+</html>
